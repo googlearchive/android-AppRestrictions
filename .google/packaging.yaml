@@ -6,8 +6,13 @@
 ---
 status:       PUBLISHED
 technologies: [Android]
-categories:   [Content]
+categories:   [content]
 languages:    [Java]
 solutions:    [Mobile]
 github:       android-AppRestrictions
+level:        INTERMEDIATE
+icon:         screenshots/big_icon.png
+apiRefs:
+    - android:android.content.RestrictionEntry
+    - android:android.os.UserManager
 license: apache2

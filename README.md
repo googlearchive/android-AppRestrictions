@@ -2,12 +2,27 @@
 Android AppRestrictions Sample
 ===================================
 
+A sample that demonstrates the use of the App Restriction feature on devices with multiuser support
+
+Introduction
+------------
+
 This sample demonstrates the use of the App Restriction feature, which is available on
 Android 4.3 and above tablet device with the multiuser feature.
 
 When launched under the primary User account, you can toggle between standard app restriction
-types and custom.When launched under a restricted profile, this activity displays app
+types and custom.  When launched under a restricted profile, this activity displays app
 restriction settings, if available.
+
+This sample app maintains custom app restriction settings in shared preferences.  When
+the activity is invoked (from Settings > Users), the stored settings are used to initialize
+the custom configuration on the user interface.  Three sample [RestrictionEntry][1] types are
+shown: checkbox, single-choice, and multi-choice.  When the settings are modified by the user,
+the corresponding restriction entries are saved, which are retrievable under a restricted
+profile through the [UserManager][2].
+
+[1]: https://developer.android.com/reference/android/content/RestrictionEntry.html
+[2]: https://developer.android.com/reference/android/os/UserManager.html
 
 Pre-requisites
 --------------
@@ -15,6 +30,11 @@ Pre-requisites
 - Android SDK 25
 - Android Build Tools v25.0.2
 - Android Support Repository
+
+Screenshots
+-------------
+
+<img src="screenshots/1-application.png" height="400" alt="Screenshot"/> <img src="screenshots/2-custom-restrictions-actiivity.png" height="400" alt="Screenshot"/> 
 
 Getting Started
 ---------------
